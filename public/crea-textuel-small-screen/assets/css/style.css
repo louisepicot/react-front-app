@@ -1,0 +1,185 @@
+svg {
+    width: 148mm;
+    /* height: 210mm; */
+}
+
+
+#text {
+    /* margin: auto; */
+    margin-top: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+    line-height: 20px;
+}
+
+.ef {
+    width: 5px;
+}
+
+span {
+    /* display: block; */
+
+    /* width: 14px;
+    height: 14px; */
+    /* transform: rotate(-90deg); */
+}
+
+.word {
+    display: inline-flex;
+}
+
+.ouf {
+    display: block;
+    position: relative;
+    transform-origin: center;
+    touch-action: none;
+    transition: all 2s;
+    white-space: nowrap;
+}
+
+
+@media screen {
+
+    .space {
+        width: 5px;
+    }
+
+    /* body {
+        background-color: grey;
+    } */
+
+    .pagedjs_pages {
+        display: flex;
+        width: calc(var(--width) * 2);
+        flex: 0;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-bottom: 3em;
+    }
+
+    .pagedjs_page {
+        background-color: white;
+        box-shadow: 0 0 0 2px darkgrey;
+        margin: 0;
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-top: 5mm;
+    }
+
+    .pagedjs_first_page {
+        margin-left: var(--width);
+    }
+
+    .pagedjs_page>[class*="pagedjs_margin"] {
+        box-shadow: 0 0 0 1px black;
+    }
+
+    /* uncomment for recto/verso book. 
+    --------------------------------------------------- */
+    .pagedjs_pages {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .pagedjs_first_page {
+        margin-left: 0;
+    }
+
+    .pagedjs_page {
+        margin: 0 auto;
+        margin-top: 10mm;
+    }
+}
+
+
+
+
+body {
+    /* background-color: rgb(24, 22, 22); */
+    font-family: arial;
+    color: rgb(32, 30, 30);
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0mm !important;
+    padding: 0mm !important;
+}
+
+@media print {
+    @page {
+        size: 297mm 210mm;
+
+        /* border: 1px solid; */
+        margin: 20mm 20mm;
+        /* @top-left {
+            content: "poster ";
+        } */
+
+        @bottom-left {
+            content: counter(page);
+            /* content: string(title) */
+        }
+    }
+
+    body {
+        counter-reset: figureNumber;
+    }
+
+    .figcaption {
+        counter-increment: figureNumber;
+    }
+
+    .figcaption::before {
+        content: counter(figureNumber)
+    }
+
+    img {
+        width: 105mm !important;
+    }
+
+    a {
+        color: green;
+        text-decoration: none;
+        border-bottom: none;
+    }
+
+    a:hover {
+        font-style: italic;
+        color: #426bf4;
+    }
+
+
+
+    #svg {
+        background-color: white;
+        color: white !important;
+    }
+
+
+
+
+    .title {
+        position: absolute;
+        /* width: 100%; */
+    }
+
+    .input {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        width: 100%;
+        border: 0px;
+    }
+
+    img {
+        display: block;
+    }
+
+    .code-img {
+        break-after: always;
+        width: 100%;
+    }
+
+
+}

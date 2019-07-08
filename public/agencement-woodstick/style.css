@@ -1,0 +1,74 @@
+#container {
+    width: 90vw;
+    height: 90vh;
+}
+
+body {
+    background: black;
+    font-family: arial;
+    color: white;
+    font-size: 12px;
+    /* line-height: 76px; */
+
+    /* line-height: 1em; */
+    margin: 0mm !important;
+    padding: 0mm !important;
+}
+
+h1 {
+    font-size: 18px;
+    /* line-height: 159px; */
+}
+
+p {
+    /* line-height: 76px; */
+    /* font-size: 84px; */
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -3000;
+}
+
+.img-moche {
+    width: 40vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+
+    background: black;
+    color: white;
+    width: 20vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding-left: 30px;
+    /* background: transparent; */
+}
+
+.container::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.container>div {
+
+    max-width: 30vw;
+}
+
+a,
+a:hover,
+a:visited {
+    color: blue;
+}
