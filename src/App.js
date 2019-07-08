@@ -10,6 +10,7 @@ function App() {
       <a href="./crea-textuel-small-screen/index.html">crea-textuel-small-screen</a>
       <a href="./genderfluid-mooving-flame/index.html">genderfluid-mooving-flame</a>
       <a href="./poster-desorientation/index.html">poster-desorientation</a>
+      <a href="./blue-falling-letters/index.html">blue-falling-letters</a>
     </div>
   );
 }
