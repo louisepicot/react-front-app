@@ -1,4 +1,4 @@
-opentype.load('../fonts/Wondertype-Regular.otf  ', function (err, font) {
+opentype.load('./Wondertype-Regular.otf  ', function (err, font) {
     if (err) {
         alert('Could not load font: ' + err);
     } else {
@@ -136,7 +136,7 @@ opentype.load('../fonts/Wondertype-Regular.otf  ', function (err, font) {
 
 
 
-opentype.load('../fonts/Wondertype-Regular.otf ', function (err, font) {
+opentype.load('./Wondertype-Regular.otf ', function (err, font) {
     if (err) {
         alert('Could not load font: ' + err);
     } else {
