@@ -11,6 +11,7 @@ body {
     font-size: 17px;
     margin: 0px;
     padding: 0px;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -18,4 +19,8 @@ body {
     width: 150px;
 }
 
-
+.click{
+    height: 40px;
+    width: 100px;
+    background-color: blueviolet;
+}
