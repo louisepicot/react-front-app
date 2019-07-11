@@ -1,0 +1,23 @@
+/* ROTATE LETTERS */
+
+#text {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+}
+
+
+
+span {
+    display: block;
+    position: relative;
+    transform-origin: center;
+    touch-action: none;
+    transition: all 2s;
+    /* width: 14px;
+    height: 14px; */
+    /* transform: rotate(-90deg); */
+}

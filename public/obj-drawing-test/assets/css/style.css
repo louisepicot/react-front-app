@@ -1,0 +1,21 @@
+@import 'to-print.css';
+@import 'reset.css';
+
+/* @font-face {
+    font-family: "Wondertype";
+    src: url("Wondertype-Regular.otf"),
+} */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.gif-menu img {
+    width: 150px;
+}
+
+

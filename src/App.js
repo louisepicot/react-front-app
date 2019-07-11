@@ -11,6 +11,8 @@ function App() {
       <a href="./genderfluid-mooving-flame/index.html">genderfluid-mooving-flame</a>
       <a href="./poster-desorientation/index.html">poster-desorientation</a>
       <a href="./blue-falling-letters/index.html">blue-falling-letters</a>
+      <a href="./blue-falling-letters/index.html">blue-falling-letters</a>
+      <a href="./obj-drawing-test/index.html">blue-falling-letters</a>
     </div>
   );
 }

@@ -1,0 +1,88 @@
+.poster-1 {
+    background-image: url(./gif/letters-desorientate.gif);
+    height: 100vh;
+}
+
+.main {
+    transform: rotate(90deg);
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    width: 800px;
+}
+
+.green {
+    z-index: -1;
+    background: #2500ff;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 800px;
+}
+
+#three-1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#three-2 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+#three-3 {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+#three-4 {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+}
+
+#three-5 {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+
+@media print {
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+
+    .green {
+        z-index: -1;
+        background: #2500ff;
+        transform: rotate(0deg) !important;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .poster-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 210mm;
+        height: 297mm;
+    }
+
+    /* canvas {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 210mm;
+        height: 297mm;
+    } */
+}
