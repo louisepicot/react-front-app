@@ -33,28 +33,4 @@
     font.download();
 
 
-        // var path = font.getPath('Hello, World!', 0, 10, 20);
-        // // path.draw(ctx);
-        // font.draw(ctx, 'Hello, World!', 0, 10, 120)
-        // If you just want to draw the text you can also use font.draw(ctx, text, x, y, fontSize).
-
-        // let svg = path.toSVG()
-        // console.log(svg)
-
-
-        // var aPath = new opentype.Path();
-        // aPath.moveTo(100, 0);
-        // aPath.lineTo(100, 700);
-
-        // var aGlyph = new opentype.Glyph({
-        //     name: 'A',
-        //     unicode: 65,
-        //     advanceWidth: 650,
-        //     path: aPath
-        // });
-
-
-        // console.log(font.glyphs.glyphs)
-        //  let glyphs = font.stringToGlyphs('hello')
-        //  const h = glyphs[0].advanceWidth
-        //  console.log(h)
+    

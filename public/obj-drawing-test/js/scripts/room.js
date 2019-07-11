@@ -58,7 +58,6 @@ const init = () => {
             root.position.set(0, 0, 0);
             root.scale.set(4, 4, 4)
             root.name = "salut"
-            console.log(root)
             scene.add(root);
         });
     });
@@ -99,13 +98,11 @@ const init = () => {
                 z: camera.position.z
             };
 
-            console.log("from", from)
             const to = {
                 x: root.position.x - 0,
                 y: root.position.y - 0,
                 z: root.position.z - 30
             };
-            console.log("to", to)
 
             const tween1 = new TWEEN.Tween(from)
                 .to(to, 600)
@@ -115,7 +112,6 @@ const init = () => {
                     controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)
                     //    camera.target.position.copy(camera.position)
                     //    controls.target.copy(root.postion);
-                    console.log("update", camera.position)
                 })
                 .onComplete(function () {
                     controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)
@@ -126,7 +122,6 @@ const init = () => {
                 .start()
             document.body.style.backgroundColor = "#3600ff"
             // alert("hit the ground")
-            console.log("click")
 
         }
     }
@@ -145,27 +140,25 @@ const init = () => {
             y: camera.position.y,
             z: camera.position.z
         };
-        console.log("from", from)
+
         const to = {
             x: cube2.position.x,
             y: cube2.position.y,
             z: cube2.position.z - 50
         };
-        console.log("to", to)
+ 
         const tween2 = new TWEEN.Tween(from)
             .to(to, 600)
             .easing(TWEEN.Easing.Linear.None)
             .onUpdate(function () {
                 camera.position.set(this.x, this.y, this.z);
                 controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)
-                console.log("update", camera.position)
             })
             .onComplete(function () {
                 controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)
             })
             .start()
         // alert("hit the ground")
-        console.log("click")
 
         document.body.style.backgroundColor = "#ff2d00"
 
@@ -183,20 +176,20 @@ const init = () => {
             y: camera.position.y,
             z: camera.position.z
         };
-        console.log("from", from)
+
         const to = {
             x: cube3.position.x - 0,
             y: cube3.position.y - 0,
             z: cube3.position.z - 50
         };
-        console.log("to", to)
+ 
         const tween3 = new TWEEN.Tween(from)
             .to(to, 600)
             .easing(TWEEN.Easing.Linear.None)
             .onUpdate(function () {
                 camera.position.set(this.x, this.y, this.z);
                 controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)
-                console.log("update", camera.position)
+
             })
             .onComplete(function () {
                 controls.target = new THREE.Vector3(this.x, this.y, this.z + 60)

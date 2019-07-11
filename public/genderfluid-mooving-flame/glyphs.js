@@ -21,7 +21,6 @@ opentype.load('fonts/Baskervil_-Italic.otf ', function (err, font) {
 
         
         // retrieve ligatures glyphs in the glyphs font arraay f
-        console.log(font)
         const glyphEE = font.glyphs.glyphs[504];
         const glyphTES = font.glyphs.glyphs[507];
 
@@ -57,17 +56,12 @@ opentype.load('fonts/Baskervil_-Italic.otf ', function (err, font) {
             //reassign (update) the value of inclinaison variable with new x coordinates of the mouse position taken from event object
             //only reassign inclinaison value every 250 milliseconds using setTimeout function
             setTimeout(function () {
-                // console.log(event.clientX, centerX, centerY, event.clientY)
                 if (event.clientX < 0 ) {
                     inclinaison = event.clientX + (pageXOffset - centerX)
                     curvature = event.clientX + (pageXOffset - centerX)
-                    console.log(inclinaison, curvature)
                 } else if (inclinaison ) {
-                    // inclinaison = (event.clientX * 0.05)
-                    // curvature = (event.clientX * 0.05)
                     inclinaison = (event.clientX + (pageXOffset - centerX) )*0.07
                     curvature = (event.clientX + (pageXOffset - centerX))*0.07
-                    console.log(inclinaison, curvature)
                 }
             }, 150);
 
