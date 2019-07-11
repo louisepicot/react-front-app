@@ -19,7 +19,11 @@ body {
     width: 150px;
 }
 
-.click{
+.menu {
+position: absolute;
+}
+
+.click {
     height: 40px;
     width: 100px;
     background-color: blueviolet;
